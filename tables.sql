@@ -1,11 +1,40 @@
-DROP TABLE IF EXISTS articles;
-CREATE TABLE articles
-(
-  id              smallint unsigned NOT NULL auto_increment,
-  publicationDate date NOT NULL,                              # When the article was published
-  title           varchar(255) NOT NULL,                      # Full title of the article
-  summary         text NOT NULL,                              # A short summary of the article
-  content         mediumtext NOT NULL,                        # The HTML content of the article
 
-  PRIMARY KEY     (id)
-);
+--
+-- Table structure for table `articles`
+--
+
+CREATE TABLE `articles` (
+  `id` smallint(5) UNSIGNED NOT NULL,
+  `publicationDate` date NOT NULL,
+  `categoryId` smallint(5) UNSIGNED NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `summary` text NOT NULL,
+  `content` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Table structure for table `op_categories`
+--
+
+CREATE TABLE `op_categories` (
+  `id` smallint(5) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+--
+-- Table structure for table `op_users`
+--
+
+CREATE TABLE `op_users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Indexes for dumped tables
+--
+
