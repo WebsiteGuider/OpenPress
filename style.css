@@ -18,7 +18,23 @@ body {
   border-radius: 5px;
 }
 
-
+h3.categoryDescription {
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+.category {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 60%;
+  color: #999;
+  display: block;
+  line-height: 2em;
+}
+ 
+.category a {
+  color: #999;
+  text-decoration: underline;
+}
 /* The logo and footer */
 
 #logo {
@@ -67,6 +83,7 @@ h2 a {
 
 #headlines li {
   margin-bottom: 2em;
+  clear: both;
 }
 
 .pubDate {
@@ -76,8 +93,10 @@ h2 a {
 }
 
 #headlines .pubDate {
-  display: inline-block;
+  display: block;
   width: 100px;
+  padding-top: 4px;
+  float: left;
   font-size: .5em;
   vertical-align: middle;
 }
