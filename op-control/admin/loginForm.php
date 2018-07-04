@@ -9,7 +9,7 @@
 <?php if ( isset( $results['errorMessage'] ) ) { ?>
         <div class="errorMessage"><?php echo $results['errorMessage'] ?></div>
 <?php } ?>
-<div class="adminLoginlogo"><a href="."><img id="logo" src="images/logo.png" alt="wgCMS" /></a></div>
+<div class="adminLoginlogo"><a href="."><img id="logo" src="op-core/images/logo.png" alt="wgCMS" /></a></div>
 
         <ul>
 
