@@ -2,7 +2,7 @@
 
       <div id="adminHeader">
         <h2>Dashboard</h2>
-        <p>You are logged in as <b><?php echo htmlspecialchars( $_SESSION['username']) ?></b>. <a href="admin.php?action=logout"?>Log out</a></p>
+        <p>You are logged in as <b><?php echo htmlspecialchars( $_SESSION['username']) ?></b> | <a href="admin.php?action=listCategories">Categories</a> | <a href="admin.php?action=logout"?>Log out</a></p>
       </div>
 
       <h1>All Articles</h1>
@@ -20,6 +20,7 @@
         <tr>
           <th>Publication Date</th>
           <th>Article</th>
+          <th>Category</th>
         </tr>
 
 <?php foreach ( $results['articles'] as $article ) { ?>
@@ -28,6 +29,9 @@
           <td><?php echo date('j M Y', $article->publicationDate)?></td>
           <td>
             <?php echo $article->title?>
+          </td>
+          <td>
+            <?php echo $results['categories'][$article->categoryId]->name?>
           </td>
         </tr>
 
