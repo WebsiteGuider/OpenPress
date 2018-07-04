@@ -1,4 +1,4 @@
-<?php include "templates/include/header.php" ?>
+<?php include "op-control/include/header.php" ?>
 
       <ul id="headlines">
 
@@ -17,5 +17,5 @@
 
       <p><a href="./?action=archive">Article Archive</a></p>
 
-<?php include "templates/include/footer.php" ?>
+<?php include "op-control/include/footer.php" ?>
 
