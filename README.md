@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+## OpenPress - An open source Content Management System
+OpenPress is an open source content mangement system maintained  by WebsiteGuider Team and Mahmood Hussain(Web Developer).
 
-You can use the [editor on GitHub](https://github.com/WebsiteGuider/OpenPress/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This CMS aims to give users a beginner friendly and powerful CMS. Both in terms of Back-end and Front-end.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+OpenPress is currently under construction and will be available to public after few months.
 
-### Markdown
+## Development Process
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+4. Category section is being added
+3. Temporary Login System added.
+2. Creating, Adding and Deleting articles features added.
+1. File Structure completed
 
-```markdown
-Syntax highlighted code block
+## Issues
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/WebsiteGuider/OpenPress/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Please file issue if you are having one by using issues section.
