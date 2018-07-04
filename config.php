@@ -2,7 +2,7 @@
 ini_set( "display_errors", true );
 define( "DB_HOST",'mysql:host=localhost;dbname=cms' );
 define( "DB_USERNAME", "root" );
-define( "DB_PASSWORD", "bhukkad@1029" );
+define( "DB_PASSWORD", "password" );
 //define('DB_NAME', 'cms');
 
 define( "CORE_PATH", "op-core" );
