@@ -24,7 +24,7 @@
 
       </ul>
 
-      <p><?php echo $results['totalRows']?> article<?php echo ( $results['totalRows'] != 1 ) ? 's' : '' ?> in total.</p>
+      <p><?php if (isset($results['totalRows'])) { echo $results['totalRows'];}?> article<?php if (isset($results['totalRows'])) { echo ( $results['totalRows'] != 1 ) ? 's' : ''; } ?> in total.</p>
 
       <p><a href="./">Return to Homepage</a></p>
 
