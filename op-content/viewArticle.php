@@ -1,4 +1,4 @@
-<?php include "templates/include/header.php" ?>
+<?php include "op-content/include/header.php" ?>
 
       <h1 style="width: 75%;"><?php echo htmlspecialchars( $results['article']->title )?></h1>
       <div style="width: 75%; font-style: italic;"><?php echo htmlspecialchars( $results['article']->summary )?></div>
@@ -7,5 +7,5 @@
 
       <p><a href="./">Return to Homepage</a></p>
 
-<?php include "templates/include/footer.php" ?>
+<?php include "op-content/include/footer.php" ?>
 
