@@ -24,7 +24,7 @@ function archive() {
   $results['categories'] = array();
   foreach ( $data['results'] as $category ) $results['categories'][$category->id] = $category;
   $results['pageHeading'] = $results['category'] ?  $results['category']->name : "Article Archive";
-  $results['pageTitle'] = $results['pageHeading'] . " | Widget News";
+  $results['pageTitle'] = $results['pageHeading'] . " | OpenPress";
   require( CONTENT_PATH . "/archive.php" );
 }
 
@@ -37,7 +37,7 @@ function viewArticle() {
   $results = array();
   $results['article'] = Article::getById( (int)$_GET["articleId"] );
   $results['category'] = Category::getById( $results['article']->categoryId );
-  $results['pageTitle'] = $results['article']->title . " | wgCMS";
+  $results['pageTitle'] = $results['article']->title . " | OpenPress";
   require( CONTENT_PATH . "/viewArticle.php" );
 }
 
@@ -49,7 +49,7 @@ function homepage() {
   $data = Category::getList();
   $results['categories'] = array();
   foreach ( $data['results'] as $category ) $results['categories'][$category->id] = $category; 
-  $results['pageTitle'] = "wgCMS";
+  $results['pageTitle'] = "OpenPress";
   require( CONTENT_PATH . "/homepage.php" );
 }
 
